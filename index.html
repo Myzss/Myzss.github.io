@@ -320,6 +320,431 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/10/面向对象设计/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Myzss">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Myzss blogs">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/09/10/面向对象设计/" itemprop="url">
+                  面向对象设计
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-09-10 11:32:11" itemprop="dateCreated datePublished" datetime="2018-09-10T11:32:11+08:00">2018-09-10</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/软考笔记/" itemprop="url" rel="index"><span itemprop="name">软考笔记</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <table>
+<thead>
+<tr>
+<th>设计原则</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>设计目的单一的类（避免紧耦合）</td>
+</tr>
+<tr>
+<td></td>
+<td>对扩展开放，对修改封闭</td>
+</tr>
+<tr>
+<td>李氏替换原则</td>
+<td>子类可以替换父类（子类继承了父类的方法，且拥有自己方法，可以替换父类），而替换时需要子类不要大量的进行重载</td>
+</tr>
+<tr>
+<td></td>
+<td>要依赖于抽象，而不具体实现；针对接口编程，不要针对实现编程（依赖于接口，使操作灵活）</td>
+</tr>
+<tr>
+<td>接口隔离原则</td>
+<td>使用多个专门的接口比使用单一的总接口要好（接口单一的做一件事情，不会出现疏漏）</td>
+</tr>
+<tr>
+<td>组合重用原则</td>
+<td>要尽量使用组合，而不是继承关系达到重用目的（继承是一个紧耦合关系，因为父类一变，子类跟着变）</td>
+</tr>
+<tr>
+<td>迪米特原则（最少知识法则）</td>
+<td>一个对象应当对其他对象有尽可能少的了解（信息隐蔽）</td>
+</tr>
+</tbody>
+</table>
+<p>UML :</p>
+<p>  规则，公共机制（包含规格说明，修饰，公共分类，扩展机制 ）</p>
+<p>  构造块:事务：结构事物，行为事物，分组事物，注释事物</p>
+<p>​          关系：依赖，关联，泛化，实现</p>
+<p>​        图：  </p>
+<table>
+<thead>
+<tr>
+<th>种类</th>
+<th>图</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>需求分析图</td>
+<td>用例图（系统和外界的交互，有时被称为静态，有时被称为动态多）</td>
+</tr>
+<tr>
+<td>静态结构图</td>
+<td>类图（表述类中的属性方法）</td>
+</tr>
+<tr>
+<td></td>
+<td>对象图（表述对象之间的方法）</td>
+</tr>
+<tr>
+<td></td>
+<td>包图（包与包之间的关系，以及包内部的结构）</td>
+</tr>
+<tr>
+<td></td>
+<td>组合结构图</td>
+</tr>
+<tr>
+<td></td>
+<td>构件图</td>
+</tr>
+<tr>
+<td></td>
+<td>部署图（表述的软件的部件应该部署到那个硬件上）</td>
+</tr>
+<tr>
+<td></td>
+<td>制品图</td>
+</tr>
+<tr>
+<td>动态行为图</td>
+<td>顺序/序列图（强调时间关系）</td>
+</tr>
+<tr>
+<td></td>
+<td>通信/协作图（相同，与顺序区别：通信图没有强调时间关系）</td>
+</tr>
+<tr>
+<td></td>
+<td>定时图</td>
+</tr>
+<tr>
+<td></td>
+<td>状态图（状态的变迁）</td>
+</tr>
+<tr>
+<td></td>
+<td>活动图（流程图的结构一致）</td>
+</tr>
+<tr>
+<td></td>
+<td>交互概览图</td>
+</tr>
+</tbody>
+</table>
+<p>设计模式：</p>
+<p>（    被用来在特定情况下解决一般设计问题的类和相互通信的对象的描述。一般而言一个设计模式有4个基本要素：模式名称，问题（模式的使用场合），解决方案和效果</p>
+<p>设计模式是人们可以简单方便的复用成功的设计和体系结构，将已经证实的技术表述成设计模式，也会使新系统的开发者更加易于理解其设计思路。设计模式可以帮助开发者做出有利于复用的选择，避免设计时损害系统复用性。）</p>
+<p>​    架构模式： 软件设计中高层决策，如c/s 结构属于架构模式，架构模式反映了开发系统过程中所作的基本设计决策（全局的看待问题，解决问题）</p>
+<p>​      设计模式：主要关注软件系统的设计，与具体的实现语言无关（局部的设计问题，进行构件设计时，会用到设计模式）</p>
+<p>​     惯用法： 最底层的模式，关注软件系统的设计与实现，实现是通过某种特定的程序语言来描述构件与构件之间的关系，每种编程语言都有自己特定的模式，即语言的惯用法 ，如引用计数就是c++ 语言中的一种惯用法（与语言相关）</p>
+<p>设计模式分类：</p>
+<p>​    </p>
+<table>
+<thead>
+<tr>
+<th>分类</th>
+<th>设计模式</th>
+<th>内容</th>
+<th>简化记忆</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>创建型模式（即用于创建对象的模式为设计类的实例化新对象）只是用new 来创建对象，往往灵活度不够</td>
+<td><strong>工厂方法模式</strong>Factory Method</td>
+<td>定义一个创建对象的接口，但是由子类决定需要实例化哪一个对象，这个模式使得子类实例化的过程推迟</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>抽象工厂模式Abstract Factory</td>
+<td>提供一个接口，可以创建一系列相关或相互依赖的对象，无需指定他们具体的类</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>原型模式  Prototype</td>
+<td>用原型实例指定创建对象的类型，并且通过拷贝这个原型为对象</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>单例模式Singleton</td>
+<td>保证一个类只有一个实例，并提供一个访问它的全局访问点</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>构建器模式  Builder</td>
+<td>将一个复杂类的表示与其构造相分离，是的相同的构建过程能够得出有不同的表示</td>
+<td></td>
+</tr>
+<tr>
+<td>结构型模式（）</td>
+<td><strong>适配器模式</strong>Adapter</td>
+<td>将一个类的接口转换成用户希望得到的另一种接口，它是的原本不相容的接口得以协同工作</td>
+<td>转换接口</td>
+</tr>
+<tr>
+<td></td>
+<td>桥接模式Bridge</td>
+<td>将类的抽象部分和它的实现部分分离开来，使他们可以独立地变化</td>
+<td>继承树拆分</td>
+</tr>
+<tr>
+<td></td>
+<td>组合模式Composite0</td>
+<td>将对象组合成树型结构以表示整体部分的层次结构，使得用户对单个对象和组合对象的使用具有一致性</td>
+<td>树形目录结构</td>
+</tr>
+<tr>
+<td></td>
+<td>装饰模式Decoratoer</td>
+<td>动态地给一个对象添加一些额外的职责，他提供了用子类扩展功能的一个灵活的替代，比派生一个子类更加的灵活</td>
+<td>附加职责</td>
+</tr>
+<tr>
+<td></td>
+<td>外观模式Facade</td>
+<td>定义一个高层接口，为子系统中的一组接口提供一个一致的外观，从而简化了该子系统的使用</td>
+<td>对外统一接口</td>
+</tr>
+<tr>
+<td></td>
+<td>享元模式Flyweight</td>
+<td>提供支持大量细粒度对象共享的有效方法</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>代理模式Proxy</td>
+<td>为其他对象提供一种代理以控制整个对象的访问</td>
+<td></td>
+</tr>
+<tr>
+<td>行为型模式（描述类或对象的交互、职责的分配）</td>
+<td>职责链模式chain of responsibility</td>
+<td>通过给各个对象处理请求的机会，减少请求的发送者与接收者之间的耦合机会。将接收者对象链接起来，在链中传递请求，直到有一个对象处理这个请求</td>
+<td>传递职责</td>
+</tr>
+<tr>
+<td></td>
+<td>命令模式command</td>
+<td>讲一个请求封装成一个对象，从而可以用不同的请求对客户进行参数化，将请求排队或记录请求日志，支持可撤销的操作</td>
+<td>日志记录，可撤销</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>解释器模式</strong>Interpreter</td>
+<td>给定一种语言，定义它的文法表示，并定义一个解释器，改解释器用来根据文法表示来解释语言中的句子</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>迭代器模式Iterator</td>
+<td>提供一种方法来顺序访问一个聚合对象中的各个元素而不需要暴露改对象的内部表示</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>中介者模式Mediator</td>
+<td>用一个中介对象来封装一系列的对象交互。它使各对象不需要显式的相互调用，从而达到低耦合，还可以独立地改变对象间的交互</td>
+<td>不直接引用</td>
+</tr>
+<tr>
+<td></td>
+<td>备忘录模式Memento</td>
+<td>在不破坏封装性的前提下，捕获一个对象的内部状态，并在该对象之外保存这个状态，从而可以在以后将该对象恢复到原先保存的状态</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>观察者模式Observer</td>
+<td>定义对象间的一种一对多的依赖关系，当一个对象的状态发生改变时，所有依赖于它的对象都得到通知并自动更新</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>状态模式State</td>
+<td>允许一个对象在其内部状态改变时改变它的行为</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>策略模式Strategy</td>
+<td>定义一系列算法，把它们一个个封装起来，并且使它们之间可互相替换，从而让算法可以独立于使用它的用户而变化</td>
+<td>多方案切换</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>模板方法模式</strong>Template Method</td>
+<td>定义一个操作中算法骨架，而将一些步骤延迟doa子类中，使得子类可以不改变一个算法的结构即可重新定义算法的某些特定步骤</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>访问者模式Visitor</td>
+<td>表示一个作用于某对象结构中的各元素的操作，使得在不改变各元素的类的前提下定义作用于这些元素的新操作</td>
+</tr>
+</tbody>
+</table>
+<p>​    粗体表示既可以是类模式，也可以是对象模式</p>
+<p>其他的表示只是对象模式</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    <div>
+       
+    </div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/10/信息安全/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1063,7 +1488,7 @@
                 
               
 
-              <time title="创建时间：2018-09-10 11:01:35 / 修改时间：11:23:52" itemprop="dateCreated datePublished" datetime="2018-09-10T11:01:35+08:00">2018-09-10</time>
+              <time title="创建时间：2018-09-10 11:01:35 / 修改时间：11:31:05" itemprop="dateCreated datePublished" datetime="2018-09-10T11:01:35+08:00">2018-09-10</time>
             
 
             
@@ -1128,7 +1553,7 @@
 <p><img src="/2018/09/10/计算机组成原理/TIM截图20180907145356.png" alt="TIM截图20180907145356"></p>
 <p>十进制 —— R进制 使用短除法</p>
 <p>​    </p>
-<p><img src="/2018/09/10/计算机组成原理/Users\123\Desktop\新建文件夹\TIM截图20180907145719.png" alt="TIM截图20180907145719"></p>
+<p><img src="/2018/09/10/计算机组成原理/TIM截图20180907145719.png" alt="TIM截图20180907145719"></p>
 <p>原码反码补码移码</p>
 <p>将一个数转化为二进制，一个字节存储8bit,最高位为符号位 正数的符号位 0 负数的符号位为1</p>
 </li>
@@ -1392,7 +1817,7 @@
 </tr>
 </tbody>
 </table>
-<p>​    <img src="/2018/09/10/计算机组成原理/新建文件夹\TIM截图20180908174354.png" alt="TIM截图20180908174354"></p>
+<p>​    <img src="/2018/09/10/计算机组成原理/TIM截图20180908174354.png" alt="TIM截图20180908174354"></p>
 
           
         
@@ -2863,275 +3288,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/10/操作系统/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Myzss">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Myzss blogs">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/09/10/操作系统/" itemprop="url">
-                  操作系统
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-09-10 10:29:01 / 修改时间：10:36:13" itemprop="dateCreated datePublished" datetime="2018-09-10T10:29:01+08:00">2018-09-10</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/软考笔记/" itemprop="url" rel="index"><span itemprop="name">软考笔记</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>5-7</p>
-<p>​    操作系统：</p>
-<p>​    管理系统的软硬件，数据资源</p>
-<p>​    控制程序运行</p>
-<p>​    人机之间的接口</p>
-<p>​    应用软件与硬件之间的接口</p>
-<p>包括：     进程管理  存储管理   文件管理  作业管理   设备管理</p>
-<p>​    </p>
-<table>
-<thead>
-<tr>
-<th>进程管理</th>
-<th>进程的状态  前趋图   PV操作   死锁问题</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>存储管理</td>
-<td>段页式存储     页面置换算法</td>
-</tr>
-<tr>
-<td>文件管理</td>
-<td>索引文件    位示图</td>
-</tr>
-<tr>
-<td>作业管理</td>
-<td></td>
-</tr>
-<tr>
-<td>设备管理</td>
-<td></td>
-</tr>
-<tr>
-<td>微内核操作系统</td>
-<td>虚设备与SPOOLING技术</td>
-</tr>
-</tbody>
-</table>
-<p><img src="/2018/09/10/操作系统/TIM截图20180908094850.png" alt="TIM截图20180908094850"></p>
-<p>前驱图：<img src="/2018/09/10/操作系统/Users\123\Desktop\新建文件夹\TIM截图20180908095932.png" alt="TIM截图20180908095932"></p>
-<p>PV操作——进程管理</p>
-<p>​    临界资源：各个进程间需要互斥方式对其进行共享的资源如打印机，磁带机‘</p>
-<p>​    临界区：每个进程中访问临界资源的那段代码称为临界区</p>
-<p>​    信号量： 是一种特殊的变量</p>
-<p><img src="/2018/09/10/操作系统/TIM截图20180908132701.png" alt="TIM截图20180908132701"></p>
-<p>死锁问题：    </p>
-<p>​    如果一个进程在等待一件不可能发生的事，则进程就死锁了</p>
-<p>而如果一个或多个进程产生死锁，就会造成系统死锁</p>
-<p>死锁的预防：打破死锁的四个条件</p>
-<p>​    互斥+环路等待+不剥夺+保持和等待</p>
-<p>死锁的避免：有序资源分配，银行家算法</p>
-<p>银行家算法：分配资源的原则</p>
-<p>​    当一个进程对资源的最大需求量不超过系统中的资源数时可以接纳该进程</p>
-<p>​    进程可以分期请求资源，但请求的总数不能超过最大需求量</p>
-<p>​    当系统现有的资源不能满足进程尚需资源数时，对进程的请求可以推迟分配，但总能使进程在有限的时间内得到资源。<img src="/2018/09/10/操作系统/TIM截图20180908142258.png" alt="TIM截图20180908142258"></p>
-<p>存取存储组织：</p>
-<p>​    <img src="/2018/09/10/操作系统/TIM截图20180908143248.png" alt="TIM截图20180908143248"></p>
-<p>​    段页式存储的特点，以及运作的方法</p>
-<p>​    页式存储的物理地址与逻辑地址的转化<img src="/2018/09/10/操作系统/TIM截图20180908150412.png" alt="TIM截图20180908150412"></p>
-<p><img src="/2018/09/10/操作系统/TIM截图20180908150515.png" alt="TIM截图20180908150515"></p>
-<p>按照逻辑结构来划分段号，划分的段是不均匀的。</p>
-<p>固定分区管理方案： 固定分区是一种静态分区方式，在系统生成时已将主存区划分为若干个分区，每个分区的大小可不等。操作系统通过主存分配情况表管理主存区。问题：已分配区中存在未用空间，原因是程序或作业的大小不可能都刚好等于分区的大小，造成了空间的浪费。通常将已经分配分区的未用空间叫做零头或内碎片。</p>
-<p>请求分页存储管理：将一个进程的地址空间划分为若干个大小相等的区域。称为页。相应的，将主存空阿金划分成与页相同大小的若干个物理块，称为块或页框。在为进程分配主存时，只装入若干页的用户进程和数据而非全部程序，就可以启动运行，而且若干页分别装入多个不相邻的物理块中。当访问的页面不在主存中，产生缺页中断，系统通过调页功能和页面置换功能，陆续将要使用的页面调入主存区，同时把暂不运行的页面置换到外存上。因此该方案当一个作业的程序地址空间大于主存空间可以使用的空间时，也可以执行</p>
-<p>​    覆盖技术指的是让作业中不同时运行的程序模块共同使用统一贮存区域。这样，不必将程序完全装入到主存区就可以运行。当运行中调用另一个模块时，再从辅存中调入这个模块而将原来已经运行完成的程序模块覆盖，即装入到同一存储区域内。对此要求用户明确地描述作业中各个程序模块间的调用关系，这将加重用户负担。</p>
-<p>文件管理：</p>
-<p>​    索引文件结构</p>
-<p>​    （13 个 索引节点   0-12）</p>
-<p>​        直接索引</p>
-<p>​        一级间接索引</p>
-<p>​        二级间接索引</p>
-<p>​        三级间接索引</p>
-<p>​        文件本身的扩展</p>
-<p><img src="/2018/09/10/操作系统/TIM截图20180908154050.png" alt="TIM截图20180908151251"></p>
-<p>文件和树型目录结构</p>
-<p>文件属性： R  read  只读文件属性</p>
-<p>​           A   存档属性</p>
-<p>​            S  系统文件</p>
-<p>​             H  隐藏文件</p>
-<p>文件名的组成:  驱动器号+路径+主文件名+扩展名</p>
-<p>绝对路径： 从盘符开始的路径</p>
-<p>相对路径： 从当前路径开始的路径</p>
-<p>微内核操作系统：</p>
-<p>​    </p>
-<table>
-<thead>
-<tr>
-<th>实质</th>
-<th>优点</th>
-<th>缺点</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>将图形，设备驱动以及文件系统等功能全部在内核中实现，运行在内核状态和同一地址空间</td>
-<td>减少进程间通信和状态切换的系统开销，获得较高的运行效率</td>
-<td>内核庞大，占用资源较多且不易剪裁。系统的稳定性和安全性不好</td>
-</tr>
-<tr>
-<td>只实现基本功能，将图形系统，文件系统，设备驱动以及通信功能放在内核之外</td>
-<td>内核精炼，便于剪裁和移植。系统服务程序运行在用户地址空间，系统的可靠性，稳定性和安全性较高。可用于分布式系统</td>
-<td>用户状态和内核状态需要频繁切换，从而导致系统效率不如单体内核</td>
-</tr>
-</tbody>
-</table>
-<p>分为用户态和核心态</p>
-<p>​    用户态包括： 客户进程，进程服务器，终端服务器，文件服务器，存储器服务器等</p>
-<p>​    核心态包括：（主要是内核中的内容）</p>
-<p>用户态和核心态之间会有交互。</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    <div>
-       
-    </div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -3179,7 +3335,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">12</span>
+                    <span class="site-state-item-count">13</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -3229,7 +3385,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">11</span>
+                      
+                    
+                    <span class="site-state-item-count">12</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
