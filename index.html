@@ -320,6 +320,255 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/10/信息安全/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Myzss">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Myzss blogs">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/09/10/信息安全/" itemprop="url">
+                  信息安全
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-09-10 11:22:44 / 修改时间：11:27:50" itemprop="dateCreated datePublished" datetime="2018-09-10T11:22:44+08:00">2018-09-10</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/软考笔记/" itemprop="url" rel="index"><span itemprop="name">软考笔记</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>安全属性：</p>
+<ol>
+<li>保密性： 最小授权原则，防暴露，信息加密 ，物理保密</li>
+<li>完整性  ：安全协议，验证码 ，密码校验，数字签名 ，公证</li>
+<li>可用性：综合保障（ip 过滤，业务流控制，路由选择控制，审计跟踪）</li>
+<li>不可抵赖性：数字签名</li>
+</ol>
+<p>对称加密技术</p>
+<p>​    （对称加密，使用公钥加密，使用公钥解密）<img src="/2018/09/10/信息安全/TIM截图20180905214631.png" alt="TIM截图20180905214631"></p>
+<p>缺点： 加密强度不高，密钥分发困难</p>
+<p>非对称加密技术</p>
+<p>​        （非对称加密：使用公钥加密，使用私钥解密，使用私钥加密，使用公钥解密）</p>
+<p>平常使用excel ,word 等形式都是使用对称加密技术<img src="/2018/09/10/信息安全/TIM截图20180905215627.png" alt="TIM截图20180905215627"></p>
+<ul>
+<li><p>最突出的特点：加密和解密时 在输入密码时输入的内容一致</p>
+</li>
+<li><p>公钥是共享的 ，大家都能够获取到</p>
+</li>
+<li><p>而私钥是只有自己拥有的</p>
+</li>
+<li><p>甲的公钥加密后的文件，只能够甲的私钥打开</p>
+</li>
+<li><p>相对应的甲的私钥加密后的文件，也只有甲能够打开</p>
+</li>
+<li><p>缺点;加密速度慢</p>
+<p>DES是对称密钥密码算法，它的加密密钥和解密密钥是相同的。RSA是非对称密钥密码算法，它使用不同的密钥分别用于加密和解密数据，还可以用于数字签名。对称密钥密码算法的效率要比非对称密钥密码算法高很多，使用与对文件等大量的数据进行加密。</p>
+</li>
+</ul>
+<ul>
+<li><p>信息摘要：</p>
+<ul>
+<li>​单项散列函数（单向Hash函数)  ，固定长度的散列值</li>
+</ul>
+</li>
+<li><p>​       常用的消息摘要算法： MD5  ,SHA  两个算法的散列值分别为128和160</p>
+</li>
+<li><p>由于SHA通常采用的密钥长度较长，因此安全性高于MD5</p>
+</li>
+<li><p>数字签名：是一种防抵赖技术</p>
+<ul>
+<li>使用A的私钥进行加密的过程，称为数字签名过程</li>
+<li>而使用A的公钥对A的私钥加密后的包的解密过程，称为数字签名的验证</li>
+</ul>
+<p>​数字信封：</p>
+<p>​   对称加密技术用于加密文件的正文，而文件的密钥使用非对称加密技术</p>
+</li>
+</ul>
+<p>（使用对方公钥对文件进行加密，而这个文件，只有对方私钥才能打开）</p>
+<p><img src="/2018/09/10/信息安全/数字信封.png" alt="数字信封"></p>
+<p><img src="/2018/09/10/信息安全/邮件加密.png" alt="邮件加密"></p>
+<p>加密方式传输(对称加密和非对称加密)</p>
+<p>邮件大小，比较大，要对正文使用对称加密技术，并生成随机密钥k ，就需要将随机密钥k 传送给B </p>
+<p>将K通过非对称加密，使用接收方B的公钥进行加密 生成密钥K(数字信封技术)</p>
+<p>接收方B通过自己的私钥解密得到随机密钥K,对邮件正文进行解密</p>
+<p>发送者不可抵赖 涉及到数字签名，第三方无法篡改使用到了 （ 信息摘要）</p>
+<p>对邮件使用信息摘要技术，并用数字签名技术进行加密（使用传送方A的私钥进行加密，这样对方接受到密文后，通过判断谁的公钥可以解密，可以获取到这是谁进行的加密） ,接收方通过数字签名的验证，获取到邮件的信息摘要，接收方B再对之前接收到的邮件进行信息摘要，判断两者是否是一致。</p>
+<p>网络安全：     各个网络层次</p>
+<p><img src="/2018/09/10/信息安全/网络安全.png" alt="网络安全"></p>
+<p>原本的HTTP 协议走的是明文加密方式，易被截获</p>
+<p>现在采用HTTP+SSL 协议的方式进行加密， –   https</p>
+<p>科学院会屏蔽，军方会进行隔离</p>
+<p>两种隧道协议，数据从隧道中传输，相对比较安全</p>
+<p>防火墙：软件,软件+硬件 </p>
+<p>IPSec ：与ip 协议有一些问题，针对IP包进行加密</p>
+<p><img src="/2018/09/10/信息安全/网络威胁1.png" alt="网络威胁1"></p>
+<p><img src="/2018/09/10/信息安全/网络威胁2.png" alt="网络威胁1"></p>
+<p>防火墙    </p>
+<ul>
+<li><p>网络级（工作层次低，工作效率高）</p>
+<ul>
+<li>​包过滤</li>
+<li>​状态监测（tcp-ip 连接信息）</li>
+</ul>
+</li>
+<li><p>应用级（工作层次高，工作效率低）</p>
+</li>
+<li><ol>
+<li><p>双穴主机</p>
+</li>
+<li><p>屏蔽主机</p>
+</li>
+<li><p>屏蔽子网（DHZ 非军事区，主要存放web服务器，邮件服务器）</p>
+<p><img src="/2018/09/10/信息安全/防火墙.png" alt="防火墙"></p>
+</li>
+</ol>
+<p>​</p>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    <div>
+       
+    </div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/10/数据库/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -366,7 +615,7 @@
                 
               
 
-              <time title="创建时间：2018-09-10 11:15:16 / 修改时间：11:21:57" itemprop="dateCreated datePublished" datetime="2018-09-10T11:15:16+08:00">2018-09-10</time>
+              <time title="创建时间：2018-09-10 11:15:16 / 修改时间：11:22:23" itemprop="dateCreated datePublished" datetime="2018-09-10T11:15:16+08:00">2018-09-10</time>
             
 
             
@@ -814,7 +1063,7 @@
                 
               
 
-              <time title="创建时间：2018-09-10 11:01:35 / 修改时间：11:07:50" itemprop="dateCreated datePublished" datetime="2018-09-10T11:01:35+08:00">2018-09-10</time>
+              <time title="创建时间：2018-09-10 11:01:35 / 修改时间：11:23:52" itemprop="dateCreated datePublished" datetime="2018-09-10T11:01:35+08:00">2018-09-10</time>
             
 
             
@@ -1486,7 +1735,7 @@
                 
               
 
-              <time title="创建时间：2018-09-10 10:49:48 / 修改时间：11:14:04" itemprop="dateCreated datePublished" datetime="2018-09-10T10:49:48+08:00">2018-09-10</time>
+              <time title="创建时间：2018-09-10 10:49:48 / 修改时间：11:23:53" itemprop="dateCreated datePublished" datetime="2018-09-10T10:49:48+08:00">2018-09-10</time>
             
 
             
@@ -2883,173 +3132,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/10/uml-1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Myzss">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Myzss blogs">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/09/10/uml-1/" itemprop="url">
-                  uml
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-09-10 10:17:35 / 修改时间：10:27:37" itemprop="dateCreated datePublished" datetime="2018-09-10T10:17:35+08:00">2018-09-10</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/软考笔记/" itemprop="url" rel="index"><span itemprop="name">软考笔记</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>软件开发模型：</p>
-<p>瀑布模型给出了软件生存周期中制定开发计划，需求分析，软件设计，编码，测试和维护等阶段以及各阶段的固定顺序，上一阶段完成后才能够进行到下一阶段，整个过程如同瀑布流水。该模型为软件的开发和维护提供了一种有效的管理模式，但在大量的实践中暴露出其缺点,其中最突出的时缺乏灵活性。特别是无法解决软件需求不明确或不准确的问题，所以瀑布模型适用于需求明确，且很少发生较大变化的项目。</p>
-<p> 为了克服瀑布模型的缺点，演化模型允许在获取了一组基本需求之后，通过快速法分析构造出软件的初始可运行版本（原型），然后根据用户在适用原型的过程中提出的意见对原型进行改进，从而获得原型的新版本。这一过程重复进行指导得到令用户满意的软件。该模型和螺旋模型，喷泉模型等使用与对软件需求缺乏明确认识的项目。</p>
-<p>​    螺旋模型是将瀑布模型和演化模型进行结合，在保持二者有点的同时增加了风险分析，从而弥补了二者的不足，该模型沿着螺旋旋转，并通过笛卡尔坐标的四个象限分别表示四个方面的活动：制定计划，风险分析，实施工程和客户评估。螺旋模型为项目管理人员及时调整管理决策提供了方便，进而可以降低开发风险。</p>
-<p>​    喷泉模型是以面向对象的软件开发方法为基础，以用户需求为动力，以对象来驱动的模型。该模型主要用于描述面向对象的开发过程，体现了面型对象开发过程的迭代和无间隙特性。迭代指模型中的活动通常需要重复多次，相关功能在每次迭代中被加入新的系统。无间隙是指在各开发活动之间没有明显边界。</p>
-<p><img src="/2018/09/10/uml-1/TIM截图20180908181147.png" alt="TIM截图20180908181147"></p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    <div>
-       
-    </div>
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -3097,7 +3179,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">11</span>
+                    <span class="site-state-item-count">12</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -3145,7 +3227,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">10</span>
+                      
+                    
+                    <span class="site-state-item-count">11</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
