@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-09-10T03:07:50.405Z</updated>
+  <updated>2018-09-10T03:10:04.754Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>程序语言</title>
+    <link href="http://yoursite.com/2018/09/10/%E7%A8%8B%E5%BA%8F%E8%AF%AD%E8%A8%80/"/>
+    <id>http://yoursite.com/2018/09/10/程序语言/</id>
+    <published>2018-09-10T03:08:33.000Z</published>
+    <updated>2018-09-10T03:10:04.754Z</updated>
+    
+    <content type="html"><![CDATA[<p>编译原理：</p><p>​    程序错误分为语法错误和语义错误（逻辑错误）</p><p>语法错误是语句形式上的错误，语义错误是含以上的错误（逻辑错误）</p><p>在高级程序设计语言中，语句用于描述程序中的运算步骤，控制结构以及数据传输</p><p> 程序设计语言的语法是语言的外观，给出语言的语法意味着给出语句，声明和其他语言结构的书写规则。</p><p>语义则表示不同的语法结构的含义。在程序语言的手册中，语言的描述都是围绕着语法结构展开的。通常先给出各种语句结构的语法，然后给出对应该结构的语义以描述内在含义。语用是关于程序与使用者之间的<code>关系。</code></p><p>逻辑式语言是一类以形式逻辑为基础的语言。</p><p>函数式语言以补演算为基础</p><p>命令式原因是基于动作的语言，在这种语言中，计算被看成是动作的序列。</p><p>因此通过指明一系列可执行的运算及运算的次序来描述计算过程是命令式语言的特点。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;编译原理：&lt;/p&gt;
+&lt;p&gt;​    程序错误分为语法错误和语义错误（逻辑错误）&lt;/p&gt;
+&lt;p&gt;语法错误是语句形式上的错误，语义错误是含以上的错误（逻辑错误）&lt;/p&gt;
+&lt;p&gt;在高级程序设计语言中，语句用于描述程序中的运算步骤，控制结构以及数据传输&lt;/p&gt;
+&lt;p&gt; 程序设计语言
+      
+    
+    </summary>
+    
+      <category term="软考笔记" scheme="http://yoursite.com/categories/%E8%BD%AF%E8%80%83%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="程序语言" scheme="http://yoursite.com/tags/%E7%A8%8B%E5%BA%8F%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
   
   <entry>
     <title>计算机组成原理</title>
