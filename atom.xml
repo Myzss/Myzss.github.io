@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-09-10T02:52:34.513Z</updated>
+  <updated>2018-09-10T02:54:01.901Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>数据结构与算法</title>
+    <link href="http://yoursite.com/2018/09/10/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+    <id>http://yoursite.com/2018/09/10/数据结构与算法/</id>
+    <published>2018-09-10T02:53:13.000Z</published>
+    <updated>2018-09-10T02:54:01.901Z</updated>
+    
+    <content type="html"><![CDATA[<p>排序的算法时间复杂度</p><p>​    无论原始序列中的元素如何排列，归并排序和堆排序算法的时间复杂度都是O(n lgn)</p><p>​    快排算法的最好情况指每次都是将待排序列划分为均匀的两部分，此时算法时间复杂度</p><p>O(n lg n)，在原始序列已经有序的情况下，快排的时间复杂度反而为 O(  n^2)</p><p> 插入排序时将一个新元素插入已经排好的序列中，在输入数据已经是升序的情况下，新元素只需要插入到序列尾部，是插入的最好情况，此时为O（n）</p><p>基本存储结构</p><p>​    顺序存储指逻辑上相邻的元素其存储位置也是相邻</p><p>​    链表存储结构中，通过结点中的指针映射元素之间的逻辑关系。</p><p>索引存储指元素在存储结构之上另外建立一个元素与其存储位置之间的索引表</p><p>散列存储： 元素的存储位置，与其关键字之间有某种映射关系</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;排序的算法时间复杂度&lt;/p&gt;
+&lt;p&gt;​    无论原始序列中的元素如何排列，归并排序和堆排序算法的时间复杂度都是O(n lgn)&lt;/p&gt;
+&lt;p&gt;​    快排算法的最好情况指每次都是将待排序列划分为均匀的两部分，此时算法时间复杂度&lt;/p&gt;
+&lt;p&gt;O(n lg n)，在原始序
+      
+    
+    </summary>
+    
+      <category term="软考笔记" scheme="http://yoursite.com/categories/%E8%BD%AF%E8%80%83%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="数据结构与算法" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>计算机网络</title>
