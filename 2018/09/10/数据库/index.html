@@ -150,7 +150,21 @@
 <meta property="og:image" content="http://yoursite.com/2018/09/10/数据库/TIM截图20180909204945.png">
 <meta property="og:image" content="http://yoursite.com/2018/09/10/数据库/TIM截图20180909204957.png">
 <meta property="og:image" content="http://yoursite.com/2018/09/10/数据库/TIM截图20180909205008.png">
-<meta property="og:updated_time" content="2018-09-10T03:22:23.008Z">
+<meta property="og:image" content="http://yoursite.com/2018/09/10/数据库/TIM截图20180910155447.png">
+<meta property="og:image" content="http://yoursite.com/2018/09/10/数据库/TIM截图20180910155514.png">
+<meta property="og:image" content="http://yoursite.com/2018/09/10/数据库/TIM截图20180910160041.png">
+<meta property="og:image" content="http://yoursite.com/2018/09/10/数据库/TIM截图20180910161922.png">
+<meta property="og:image" content="http://yoursite.com/2018/09/10/数据库/TIM截图20180910133240.png">
+<meta property="og:image" content="http://yoursite.com/2018/09/10/数据库/TIM截图20180910133240.png">
+<meta property="og:image" content="http://yoursite.com/2018/09/10/数据库/TIM截图20180910133249.png">
+<meta property="og:image" content="http://yoursite.com/2018/09/10/数据库/TIM截图20180910133146.png">
+<meta property="og:image" content="http://yoursite.com/2018/09/10/数据库/TIM截图20180910163733.png">
+<meta property="og:image" content="http://yoursite.com/2018/09/10/数据库/TIM截图20180910163744.png">
+<meta property="og:image" content="http://yoursite.com/2018/09/10/数据库/TIM截图20180910164832.png">
+<meta property="og:image" content="http://yoursite.com/2018/09/10/数据库/TIM截图20180910170409.png">
+<meta property="og:image" content="http://yoursite.com/2018/09/10/数据库/TIM截图20180910170344.png">
+<meta property="og:image" content="http://yoursite.com/2018/09/10/数据库/TIM截图20180911082550.png">
+<meta property="og:updated_time" content="2018-09-11T00:26:35.175Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数据库">
 <meta name="twitter:description" content="事务回滚： ​    事务是数据库更新操作的基本单位，事务回滚是指将该事物已经完成的对数据库的更新操作撤销。事务对数据库的操作首先是在缓冲区进行的，由DBMS来实现定期的缓冲区数据写入硬盘数据库的操作，也可由显式的指令来完成，事务的撤销只涉及到数据库，不会改变事务中的变量值。 数据库系统：  ​    数据库模式： ​        三级模式——两级映射属于一种层次性的架构设计（提高了可维护性）">
@@ -379,12 +393,24 @@
                 
               
 
-              <time title="创建时间：2018-09-10 11:15:16 / 修改时间：11:22:23" itemprop="dateCreated datePublished" datetime="2018-09-10T11:15:16+08:00">2018-09-10</time>
+              <time title="创建时间：2018-09-10 11:15:16" itemprop="dateCreated datePublished" datetime="2018-09-10T11:15:16+08:00">2018-09-10</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-09-11 08:26:35" itemprop="dateModified" datetime="2018-09-11T08:26:35+08:00">2018-09-11</time>
               
             
           </span>
@@ -546,11 +572,138 @@
 <p>​     保持函数依赖分解：设数据库模式P={R1,R2,R3……Rk}是关系模式R的一个分解，F是R上的函数的依赖集，P中每个模式Ri上的FD集时Fi 。如果{F1,F2,……FK} 与F是等价的（相互逻辑蕴涵），那么称分解P保持FD</p>
 <p>​    无损分解：有损指不能还原，无损指可以还原</p>
 <p>​    无损联接分解：指将一个关系模式分解成若干个关系模式后，通过自然联接和投影等运算仍能还原到原来的关系模式</p>
+<p>​    <img src="/2018/09/10/数据库/TIM截图20180910155447.png" alt="TIM截图20180910155447"></p>
+<p><img src="/2018/09/10/数据库/TIM截图20180910155514.png" alt="TIM截图20180910155514"></p>
+<p>​    <strong>一分为二：</strong>：</p>
+<p>​    <img src="/2018/09/10/数据库/TIM截图20180910160041.png" alt="TIM截图20180910160041"></p>
+<p><strong>并发控制：</strong></p>
+<p>事务：</p>
+<table>
+<thead>
+<tr>
+<th>cuid</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>原子性</td>
+<td>看作是原子，不可拆分，要么全做，要么不做</td>
+</tr>
+<tr>
+<td>一致性</td>
+<td>事务执行之前数据保持一致的状态，在事务执行之后数据的状态也要保持一致</td>
+</tr>
+<tr>
+<td>隔离性</td>
+<td>事务之间独立进行，互不影响</td>
+</tr>
+<tr>
+<td>持续性</td>
+<td>事务执行之后的影响是持续的</td>
+</tr>
+</tbody>
+</table>
+<p>​    并发产生的问题：</p>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>丢失更新</td>
+<td></td>
+</tr>
+<tr>
+<td>不可重复读</td>
+<td></td>
+</tr>
+<tr>
+<td>读脏数据</td>
+</tr>
+</tbody>
+</table>
+<p>​    <img src="/2018/09/10/数据库/TIM截图20180910161922.png" alt="TIM截图20180910161922">         </p>
+<p>​    解决方案： 封锁协议： S封锁 （读锁）   X封锁（写锁）</p>
+<p>写锁之上不能加任何锁        读锁之上可以加读锁</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>一级封锁协议</td>
+<td>事务T在修改数据R之前必须先对其加x锁，直到事务结束才释放。可防止丢失修改</td>
+</tr>
+<tr>
+<td>二级封锁协议</td>
+<td>一级封锁协议加上事务T在读取数据R之前先对其加s锁，读完后即可释放s锁。可防止丢失修改，还可防止读取脏数据</td>
+</tr>
+<tr>
+<td>三级封锁协议</td>
+<td>一级封锁协议加上事务T在读取数据R之前先对其加s锁，直到事务结束才释放。可以防止丢失修改，防止读脏数据与防止数据重复读</td>
+</tr>
+<tr>
+<td>两段封锁协议</td>
+<td>可串行化，可能发生死锁</td>
+</tr>
+</tbody>
+</table>
+<p>​            </p>
+<p>​               </p>
+<p>​    死锁问题：</p>
+<p><img src="/2018/09/10/数据库/TIM截图20180910133240.png" alt="TIM截图20180910133146"></p>
+<p>​    <img src="/2018/09/10/数据库/TIM截图20180910133240.png" alt="TIM截图20180910133240"><em><img src="/2018/09/10/数据库/TIM截图20180910133249.png" alt="TIM截图20180910133249"></em><img src="/2018/09/10/数据库/TIM截图20180910133146.png" alt="TIM截图20180910133146"><strong>数据库完整性约束</strong>    为了提高数据可靠性，前三种只能够简单的约束</p>
+<p>​    实体完整性约束（通过给实体定义主键完成约束的是主键，主键不能够为空）</p>
+<p>​    参照完整性约束（设置外键）</p>
+<p>​    用户自定义完整性约束（设置属性的一些约束，如年龄不超过20）</p>
+<p>​    （触发器）</p>
+<p>数据库安全：</p>
 <p>​    </p>
-<p>​    <strong>并发控制</strong></p>
-<p>​    <strong>数据库完整性约束</strong></p>
-<p>​    <strong>分布式数据库</strong></p>
+<table>
+<thead>
+<tr>
+<th>措施</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>用户标识和鉴定</td>
+<td>最外层的安全保护措施，可以使用用户账户，口令以及随机数检验等方式</td>
+</tr>
+<tr>
+<td></td>
+<td>对用户进行授权，包括操作类型（查找，插入，删除，修改等）和数据对象（主要是数据范围）的权限</td>
+</tr>
+<tr>
+<td>密码存储的传输</td>
+<td>对远程终端信息用密码传输</td>
+</tr>
+<tr>
+<td></td>
+<td>对视图进行授权</td>
+</tr>
+<tr>
+<td>审计</td>
+<td>使用一个专用文件或数据库，自动将用户对数据库的所有操作记录下来</td>
+</tr>
+</tbody>
+</table>
+<p><strong>数据备份：</strong>：<img src="/2018/09/10/数据库/TIM截图20180910163733.png" alt="TIM截图20180910163733"></p>
+<p><img src="/2018/09/10/数据库/TIM截图20180910163744.png" alt="TIM截图20180910163744">    </p>
+<p><img src="/2018/09/10/数据库/TIM截图20180910164832.png" alt="TIM截图20180910164832">分布式数据库**</p>
 <p>​    <strong>数据仓库与数据挖掘</strong></p>
+<p>​    <img src="/2018/09/10/数据库/TIM截图20180910170409.png" alt="TIM截图20180910170409"></p>
+<p><img src="/2018/09/10/数据库/TIM截图20180910170344.png" alt="TIM截图20180910170344"></p>
+<p>反规范化： 由于规范化使表不断的拆分，导致数据表过多，提高了增删改的速度，但是会增加查询的工作量，系统需要进行多次连接，才能进行查询，是系统效率下降。</p>
+<p>​    技术： 增加派生性冗余列    增加冗余列    重新组表      分割表<img src="/2018/09/10/数据库/TIM截图20180911082550.png" alt="TIM截图20180911082550"></p>
 
       
     </div>
@@ -667,7 +820,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">14</span>
+                    <span class="site-state-item-count">15</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -721,7 +874,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">13</span>
+                      
+                    
+                    <span class="site-state-item-count">14</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>

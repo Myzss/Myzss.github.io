@@ -131,14 +131,14 @@
 
 
   <meta name="description" content="设计原则 内容      设计目的单一的类（避免紧耦合）    对扩展开放，对修改封闭   李氏替换原则 子类可以替换父类（子类继承了父类的方法，且拥有自己方法，可以替换父类），而替换时需要子类不要大量的进行重载    要依赖于抽象，而不具体实现；针对接口编程，不要针对实现编程（依赖于接口，使操作灵活）   接口隔离原则 使用多个专门的接口比使用单一的总接口要好（接口单一的做一件事情，不会出">
-<meta name="keywords" content="面向对象设计">
+<meta name="keywords" content="面向对象+设计模式">
 <meta property="og:type" content="article">
 <meta property="og:title" content="面向对象设计">
 <meta property="og:url" content="http://yoursite.com/2018/09/10/面向对象设计/index.html">
 <meta property="og:site_name" content="Myzss blogs">
 <meta property="og:description" content="设计原则 内容      设计目的单一的类（避免紧耦合）    对扩展开放，对修改封闭   李氏替换原则 子类可以替换父类（子类继承了父类的方法，且拥有自己方法，可以替换父类），而替换时需要子类不要大量的进行重载    要依赖于抽象，而不具体实现；针对接口编程，不要针对实现编程（依赖于接口，使操作灵活）   接口隔离原则 使用多个专门的接口比使用单一的总接口要好（接口单一的做一件事情，不会出">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-09-10T03:34:57.106Z">
+<meta property="og:updated_time" content="2018-09-12T08:09:32.497Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="面向对象设计">
 <meta name="twitter:description" content="设计原则 内容      设计目的单一的类（避免紧耦合）    对扩展开放，对修改封闭   李氏替换原则 子类可以替换父类（子类继承了父类的方法，且拥有自己方法，可以替换父类），而替换时需要子类不要大量的进行重载    要依赖于抽象，而不具体实现；针对接口编程，不要针对实现编程（依赖于接口，使操作灵活）   接口隔离原则 使用多个专门的接口比使用单一的总接口要好（接口单一的做一件事情，不会出">
@@ -366,12 +366,24 @@
                 
               
 
-              <time title="创建时间：2018-09-10 11:32:11 / 修改时间：11:34:57" itemprop="dateCreated datePublished" datetime="2018-09-10T11:32:11+08:00">2018-09-10</time>
+              <time title="创建时间：2018-09-10 11:32:11" itemprop="dateCreated datePublished" datetime="2018-09-10T11:32:11+08:00">2018-09-10</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-09-12 16:09:32" itemprop="dateModified" datetime="2018-09-12T16:09:32+08:00">2018-09-12</time>
               
             
           </span>
@@ -536,6 +548,7 @@
 <p>设计模式是人们可以简单方便的复用成功的设计和体系结构，将已经证实的技术表述成设计模式，也会使新系统的开发者更加易于理解其设计思路。设计模式可以帮助开发者做出有利于复用的选择，避免设计时损害系统复用性。）</p>
 <p>​    架构模式： 软件设计中高层决策，如c/s 结构属于架构模式，架构模式反映了开发系统过程中所作的基本设计决策（全局的看待问题，解决问题）</p>
 <p>​      设计模式：主要关注软件系统的设计，与具体的实现语言无关（局部的设计问题，进行构件设计时，会用到设计模式）</p>
+<p>​    设计模式具有  适应需求变化的优点。</p>
 <p>​     惯用法： 最底层的模式，关注软件系统的设计与实现，实现是通过某种特定的程序语言来描述构件与构件之间的关系，每种编程语言都有自己特定的模式，即语言的惯用法 ，如引用计数就是c++ 语言中的一种惯用法（与语言相关）</p>
 <p>设计模式分类：</p>
 <p>​    </p>
@@ -690,6 +703,9 @@
 </table>
 <p>​    粗体表示既可以是类模式，也可以是对象模式</p>
 <p>其他的表示只是对象模式</p>
+<p>面向对象程序设计语言为面向对象实现阶段提供支持</p>
+<p>面向对象用例设计阶段  面向对象分析阶段  面向对象需求分析阶段 都可恶意采用建模语言来描述。</p>
+<p>在面向对象语言中，类的实例化是指对类的实例分配存储空间。</p>
 
       
     </div>
@@ -720,7 +736,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/面向对象设计/" rel="tag"># 面向对象设计</a>
+            <a href="/tags/面向对象-设计模式/" rel="tag"># 面向对象+设计模式</a>
           
         </div>
       
@@ -806,7 +822,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">14</span>
+                    <span class="site-state-item-count">15</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -860,7 +876,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">13</span>
+                      
+                    
+                    <span class="site-state-item-count">14</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>

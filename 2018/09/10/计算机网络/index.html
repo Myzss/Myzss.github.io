@@ -140,8 +140,9 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/2018/09/10/计算机网络/网络规划与设计.png">
 <meta property="og:image" content="http://yoursite.com/2018/09/10/计算机网络/TIM截图20180905135958.png">
+<meta property="og:image" content="http://yoursite.com/2018/09/10/计算机网络/TIM截图20180910145402.png">
 <meta property="og:image" content="http://yoursite.com/2018/09/10/计算机网络/网络接入技术.png">
-<meta property="og:updated_time" content="2018-09-10T03:23:53.603Z">
+<meta property="og:updated_time" content="2018-09-12T08:09:13.754Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="计算机网络">
 <meta name="twitter:description" content="层次 名称 主要功能 主要设备及协议     1 物理层 进行二进制的传输（高电平低电平的传输） 中继器（为了信号的传输不衰竭，每隔一段距离设置一个中继器） 集线器（多端口的中继器）   2 数据链路层 传送以帧为单位的信息（信息单位，方便传输时的识别） 网桥（连接两个同类型网络的设备） 交换机  （多端口的网桥  连接多个设备）网卡  PPTP,L2TP,SLIP,PPP   3 网络层">
@@ -370,12 +371,24 @@
                 
               
 
-              <time title="创建时间：2018-09-10 10:49:48 / 修改时间：11:23:53" itemprop="dateCreated datePublished" datetime="2018-09-10T10:49:48+08:00">2018-09-10</time>
+              <time title="创建时间：2018-09-10 10:49:48" itemprop="dateCreated datePublished" datetime="2018-09-10T10:49:48+08:00">2018-09-10</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-09-12 16:09:13" itemprop="dateModified" datetime="2018-09-12T16:09:13+08:00">2018-09-12</time>
               
             
           </span>
@@ -549,6 +562,7 @@
 <p>且只有前8位 表示地址空间    总共是0-127个  还包含特殊地址</p>
 <p>B类地址：包含主机数量2^16-2  前两段为网络地址，后为主机地址</p>
 <p>c类地址：包含主机数量2^8-2  即254台主机   ，前三段为网络地址</p>
+<p><img src="/2018/09/10/计算机网络/TIM截图20180910145402.png" alt="TIM截图20180910145402"></p>
 </li>
 <li><p>子网划分</p>
 <ol>
@@ -609,7 +623,13 @@
 <p>​    防火墙技术，访问控制技术和入侵检测技术都属于网络安全控制技术</p>
 <p>差错控制技术是一种用来保证数据传输质量的技术，不属于网络安全控制技术。</p>
 <p>冲击波 病毒是一种弄蠕虫类型的病毒，在进行网络传播时，利用了windows 操作系统的RPC漏洞。</p>
-<p>4G 时代：  LTE 分为   </p>
+<p>TCP/IP体系结构中，ARP协议数据单元封装在以太网的数据帧中传送，实现IP地址到MAC地址的转换。</p>
+<p>IEEE 802.11标准定义的分布式协调功能采用了载波监听多路访问肿突避免（CSMA/CA协议）。在无线网中进行冲突检测时有困难的。如，连个站由于距离过大或中间障碍物的分隔而检测不到冲突，但是位于她们之间的第三个站可能会检测到冲突，这就是所谓的隐蔽终端问题。采用冲突避免的办法可以解决隐蔽终端的问题。802.11定义了一个帧间隔（Inter Frame  Spacing  IFS）时间。另外还有一个后退计数器，其初始值是由随机数发生器设置的，递减记数直到0.</p>
+<p>基本操作：</p>
+<p>​     1 如果一个站有数据要发送并且监听到信道忙，则产生一个随机数设置自己的后退计数器并坚持监听</p>
+<p>​    2 坚挺到信道空闲后等待一个IFS时间，然后开始计数，最先计数完的栈可以开始发送</p>
+<pre><code>3  其他站在监听到可以采用载波检测方法发现信道空闲，也可以采用能量检测方法发现信道空闲。这个算法对参与竞争的站是公平的，基本上按照先来先服务的顺序获取到发送的机会。
+</code></pre><p>4G 时代：  LTE 分为   </p>
 <p>​    十分  ：TDD    由 TD-SCDMA 演化</p>
 <p>​    平分： FDD 由  WCDMA 演化</p>
 <p>IPV6:  是设计用于替代现行版本IP协议（IPV4) 的下一代ip协议</p>
@@ -636,6 +656,16 @@
 <p>​    成本低，宽芯线，聚光好，耗散大，低效，用于低速度，短距离的通信</p>
 <p>单模光纤：</p>
 <p>​     成本高，窄芯线，需要激光源，耗散小，高校，用于高速度，长距离的通信</p>
+<p><strong>网络攻击</strong>: 以网络为手段窃取网络上其他计算机的资源或特权，对其完全性和可用性进行破坏的行为。网络攻击又分为主动攻击和被动攻击。被动攻击就是网络窃听，截取数据包进行Fenix，从中窃取重要的敏感信息。被动攻击很难发现，因此预防很重要。防止被动攻击的主要手段是  数据加密传输。 为了保护网络资源免于威胁和攻击，在密码学和安全协议的基础上发展了网络安全体系中的5类安全服务：身份认证，访问控制，数据保密，数据完整性和不可否认。对这5类安全服务，国际标准化组织ISO已经有明确的定义。主动攻击包括：窃取，篡改，假冒和破坏。字典式口令猜测，IP地址欺骗和服务拒绝攻击等都属于主动攻击。一个好的身份认证系统包括数据加密，数据完整性检验，数据签名和访问控制等安全机制，可以用于防范主动攻击，但要是想要杜绝主动攻击很困难，因此对付主动攻击的另一个措施是及时发现并及时恢复所造成的破坏。</p>
+<p>​    常用的9中网络攻击方法：</p>
+<p>​    获取口令        放置特洛伊木马程序    WWW的欺骗术    电子邮件攻击    </p>
+<p>​    通过一个节点来攻击其他节点        网络监听    寻找系统漏洞        利用账号进行攻击</p>
+<p>​    偷取特权 </p>
+<p>计算机病毒：</p>
+<p>​    多行病毒是一种较为高级的病毒，这种病毒在每次感染后会改变自己</p>
+<p>​    熊猫烧香是一种感染型蠕虫病毒，它能感染系统中exe,~,pif .src  html 和asp等文件，还能够中止大量的反病毒软件进程并且会删除扩展名为gho的文件，该文件是——系统备份工具GHOST的备份文件，使用户的系统备份文件丢失。</p>
+<p>​    被感染的用户系统中所有.exe 可执行文件全被被改成熊猫举着三炷香的模样。</p>
+<p>（执行文件图标编程熊猫烧香，用户信息被泄露，系统运行变慢）</p>
 
       
     </div>
@@ -752,7 +782,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">14</span>
+                    <span class="site-state-item-count">15</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -806,7 +836,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">13</span>
+                      
+                    
+                    <span class="site-state-item-count">14</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>

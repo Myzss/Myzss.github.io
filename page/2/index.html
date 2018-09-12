@@ -320,6 +320,297 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/10/多媒体/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Myzss">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Myzss blogs">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/09/10/多媒体/" itemprop="url">
+                  多媒体
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-09-10 10:42:34" itemprop="dateCreated datePublished" datetime="2018-09-10T10:42:34+08:00">2018-09-10</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-09-12 16:09:16" itemprop="dateModified" datetime="2018-09-12T16:09:16+08:00">2018-09-12</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/软考笔记/" itemprop="url" rel="index"><span itemprop="name">软考笔记</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>1-3分左右</p>
+<ol>
+<li><p>多媒体基础：</p>
+<ol>
+<li><p>多媒体（Mutilmedia）是融合两种或两种以上媒体的一种人机交互式信息交流和传播媒体，使用的媒体包括文字，图形，图像，声音，动画和电视图像等。要把一台普通的计算机变成多媒体计算机要研究的关键技术是：视频音频信号获取技术，多媒体数据压缩编码和解码技术，视频音频数据的实时处理技术和视频音频数据的输出技术。</p>
+</li>
+<li><p>多媒体基数概念</p>
+<ol>
+<li><p>音频</p>
+<ol>
+<li><p>声音的带宽</p>
+<ol>
+<li><p>人耳：    20-20KHz</p>
+</li>
+<li><p>说话： 300-3400Hz</p>
+</li>
+<li><p>乐器：20-20KHz</p>
+</li>
+<li><p>超声波：超过20KHz</p>
+</li>
+<li><p>次声波：低于20Hz</p>
+<p>声音的信号是模拟信号，计算机能够处理的信号是数字信号</p>
+<p>所以需要进行采样</p>
+</li>
+</ol>
+</li>
+<li><p>采样：</p>
+<ol>
+<li>采样频率：采样频率越高，采点越多，声音的还原度越高</li>
+<li>采样精度：</li>
+<li>采样频率应为声音最高频率2倍</li>
+<li>​</li>
+<li><img src="/2018/09/10/多媒体/TIM截图20180906111425.png" alt="TIM截图20180906111425"></li>
+<li>数据传输率（b/s） =采样频率 （Hz）X  量化位数（b）x 声道数</li>
+<li>声音信号是一种模拟信号，计算机要对其进行处理，必须要将其转换为数字声音信号即用二进制数字的编码形式来表示声音。最基本的声音信号数字化方法是  取样——量化法</li>
+<li>采样：把时间连续的模拟信号转换成时间爱你离散，幅度连续的信号。在某些特定的时刻获取声音信号幅值叫做采样。由这些特定时刻采样得到的信号称为离散时问信号。一般都是每隔相等的一小段时间采样一次，其时间间隔称为取样周期，其倒数称为采样频率。采样定理是选择采样频率的理论依据，为了不产生失真，采样频率不应低于声音信号最高频率的两本。因此，语言信号的采样频率一般为8KHz,音乐信号的采样频率应该在40KHz以上，采样频率越高，可回复的声音信号分量越丰富，其声音的保真度越好。</li>
+<li>量化：把在幅度上连续取值（模拟量）的每一个样本转换成离散值（数字量），因此量化过程有时也称为A/D （模数转换），量化后的样本是用若干位二进制（bit）来表示的，位数的多少反映了度量声音波形幅度的精度，称为量化精度，也称为量化分辨率。如，每个声音样本若用16位（2个字节）表示，则声音样本的取值范围是  0~65536   ，精度是  1/65536 ,若只用8位（1个字节）表示，则样本的取值范围 0~255，精度为1/256。量化精度越高声音的质量越好，选用的存储空间越多。</li>
+<li>编码：经过采样和量化处理后的声音信号已经是数字形式了，为了便于计算机存储，处理和传输，必须按照约定的要求进行数据压缩和编码，即选择一种或者集中方式对其进行数据压缩，以减少数据量，再按照某种规定的格式将数据组织成为文件。</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>图像</p>
+<p>(亮度，色调，色饱和度三个物理量来描述，并称为色彩三要素)</p>
+<ol>
+<li><p>亮度：画面的明亮程度，亮度是描述光作用域人眼时引起的明暗程度感觉，是指色彩明暗深浅程度</p>
+</li>
+<li><p>色调（红，绿）：指颜色的类别，如红色，绿色，蓝色等不同颜色就是指色调</p>
+</li>
+<li><p>饱和度：色饱和度指某一颜色的深浅程度（或浓度）</p>
+</li>
+<li><p>彩色空间：</p>
+<p>（彩色打印的纸张是不能够发射光纤的，因而彩色打印机使用了能够吸收特定的光波而反射其他光波的油墨或颜料来实现。用油墨或颜料进行混合得到的彩色称为相减混色，原因是减少了人眼识别颜色所需要的反射光。根据三基色原理，油墨或颜料的三基色是青色（Cyan）,品红（magenta）和黄 （yellow） Cmy。可以用这三种颜色的油墨或颜料按照不同比例混合成任何一种由油墨或颜料表现出来的颜色，这种彩色表示方法称为CMY彩色额空间。）</p>
+<ol>
+<li><p>RGB(电脑显示器，彩色显示器   三原色，red  green  blue，白色是其他颜色经过配合出来的)</p>
+</li>
+<li><p>YUV（电视，兼容）</p>
+</li>
+<li><p>CMY(CMYK)印刷领域 c  cyan  m  magenta   y yellw  </p>
+<p>​    光的三原色是叠加，印刷是相减的原理</p>
+<p>三种中，黑色难调且贵，后又使用 K   即加入黑色原料</p>
+</li>
+<li><p>HSV（HSB)</p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>媒体的种类：</p>
+<p>| 名称             | 内容                                       |<br>| ————– | —————————————- |<br>| 感觉 媒体          | 人们接触信息的感觉形式，如视，听,触觉，嗅觉，味觉等               |<br>|                | 信息的表示形式，如文字，图形，图像，动画，音频和视频等              |<br>| <strong>显示媒体（表现媒体）</strong> | 表现和获取信息的物理设备，如输入显示媒体键盘，鼠标，麦克风等，输出显示媒体显示器，打印机和音箱等 |<br>|                | 存储数据的物理设备，如磁盘，光盘，内存等                     |<br>|                | 传输数据的物理载体，如电缆，光缆和交换设备等                   |</p>
+<p>​</p>
+</li>
+</ol>
+</li>
+<li><p>多媒体相关计算问题</p>
+<ol>
+<li><p>图像容量计算</p>
+<ol>
+<li><p>知道像素，位数     </p>
+<ol>
+<li><p>每个像素为16位，图像为640x480，求容量</p>
+<p>16位表示每个像素点使用多少个bit位存储像素点</p>
+<p>占据的字节：16/8 = 2 个字节</p>
+<p>640<em>480</em>16/8 =614,400B</p>
+</li>
+</ol>
+</li>
+<li><p>知道像素，色数</p>
+<ol>
+<li><p>640x480像素，256色的图像，求容量</p>
+<p>色数： 2^k  = 色数 ，K 代表着位数，颜色信息需要使用8个bit位来存储</p>
+<p>8个bit 位就是一个字节 Byte</p>
+<p>640x480xlog2(256)/8=307,200B</p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>音频容量计算</p>
+<p>容量= 采样频率   x   量化   /   采样位数(位)  x   声道数 / 8</p>
+</li>
+<li><p>视频容量计算</p>
+<p>容量 =  每帧图像容量（Byte)  X   每秒帧数 X  时间 + 音频容量 X  时间</p>
+<p><img src="/2018/09/10/多媒体/TIM截图20180906154943.png" alt="TIM截图20180906154943"></p>
+</li>
+</ol>
+</li>
+<li><p>常见多媒体标准</p>
+<p><img src="/2018/09/10/多媒体/TIM截图20180906155430.png" alt="TIM截图20180906155430"></p>
+</li>
+<li><p>数据压缩技术</p>
+<p>有损压缩和无损压缩<img src="/2018/09/10/多媒体/TIM截图20180906163704.png" alt="TIM截图20180906163704"></p>
+<p>​    <img src="/2018/09/10/多媒体/TIM截图20180908180553.png" alt="TIM截图20180908180547"></p>
+<p>​</p>
+</li>
+</ol>
+</li>
+</ol>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    <div>
+       
+    </div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/10/法律法规/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -366,12 +657,24 @@
                 
               
 
-              <time title="创建时间：2018-09-10 10:37:56 / 修改时间：10:41:33" itemprop="dateCreated datePublished" datetime="2018-09-10T10:37:56+08:00">2018-09-10</time>
+              <time title="创建时间：2018-09-10 10:37:56" itemprop="dateCreated datePublished" datetime="2018-09-10T10:37:56+08:00">2018-09-10</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-09-12 16:09:15" itemprop="dateModified" datetime="2018-09-12T16:09:15+08:00">2018-09-12</time>
               
             
           </span>
@@ -577,7 +880,7 @@
 </tr>
 <tr>
 <td></td>
-<td>由汉语拼音大写字母组成如  电子行业为（SJ）</td>
+<td>由汉语拼音大写字母组成如  电子行业为（SJ）Q3(航天)，JB(机械)，JR(金融系统)</td>
 </tr>
 <tr>
 <td></td>
@@ -591,6 +894,7 @@
 </table>
 <p>标准化法规定：国家标准，行业标准分为强制性标准和推荐标准。保障人体健康，人身，财产安全的标准和法律，行政法规规定强制执行的标准是强制性标准，其他标准是推荐性标准。</p>
 <p>​    省，自治区，直辖市标准化行政主管部门制定的工业产品的安全，卫生要求的地方标准，在本行政区域内是强制性标准。</p>
+<p>​    根据我国标准化法，我国标准可以分为国家标准，行业标准，地方标准和企业标准，其中，国家标准，行业标准和地方标准又可以分为强制性标准和推荐性标准。它们分别具有其代号和编号，通过标准的代号可以确定标准的类别。行业标准是由行业标准组织制定和公布适应于器业务领域的标准，其推荐性标准，由行业汉字拼音大写加   “ /I “组成。已经正式公布的行业代号 Q3 航天  SJ 电子  JB 电子  JR  金融等。</p>
 
           
         
@@ -694,12 +998,24 @@
                 
               
 
-              <time title="创建时间：2018-09-10 10:29:01 / 修改时间：10:36:13" itemprop="dateCreated datePublished" datetime="2018-09-10T10:29:01+08:00">2018-09-10</time>
+              <time title="创建时间：2018-09-10 10:29:01" itemprop="dateCreated datePublished" datetime="2018-09-10T10:29:01+08:00">2018-09-10</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-09-12 18:08:02" itemprop="dateModified" datetime="2018-09-12T18:08:02+08:00">2018-09-12</time>
               
             
           </span>
@@ -860,6 +1176,9 @@
 <p>​    用户态包括： 客户进程，进程服务器，终端服务器，文件服务器，存储器服务器等</p>
 <p>​    核心态包括：（主要是内核中的内容）</p>
 <p>用户态和核心态之间会有交互。</p>
+<p>Spooling 技术 实际上是用一类物理设备模拟另一类物理设备的技术，是使独占使用的设备编程多台虚拟设备的一种技术，也是一种速度匹配技术。Spooling 系统是由   预输入程序   缓输出程序 和并管理程序以及 输入和输出并组成的。其中输入井和输出井是为了存放从输入设备输入的信息以及作为作业执行的结果，系统在磁盘上开辟的存储空间。</p>
+<p><img src="/2018/09/10/操作系统/TIM截图20180912162028.png" alt="TIM截图20180912162028"></p>
+<p><img src="/2018/09/10/操作系统/TIM截图20180912162014.png" alt="TIM截图20180912162014"></p>
 
           
         
@@ -963,12 +1282,24 @@
                 
               
 
-              <time title="创建时间：2018-09-10 10:17:35 / 修改时间：10:27:37" itemprop="dateCreated datePublished" datetime="2018-09-10T10:17:35+08:00">2018-09-10</time>
+              <time title="创建时间：2018-09-10 10:17:35" itemprop="dateCreated datePublished" datetime="2018-09-10T10:17:35+08:00">2018-09-10</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-09-12 22:05:15" itemprop="dateModified" datetime="2018-09-12T22:05:15+08:00">2018-09-12</time>
               
             
           </span>
@@ -1021,12 +1352,16 @@
       
         
           
-            <p>软件开发模型：</p>
+            <p>uml文档仅仅是设计与开发人员采用uml语言进行系统分析与设计的结果，并没有给出如何进行开发和采用何种开发流程，同样也不指导如何进行面向对象设计。</p>
+<p>uml中的构件是遵从一组接口并提供一组接口的实现，构件表示的是物理模块而不是逻辑模块</p>
+<p>软件开发模型：</p>
 <p>瀑布模型给出了软件生存周期中制定开发计划，需求分析，软件设计，编码，测试和维护等阶段以及各阶段的固定顺序，上一阶段完成后才能够进行到下一阶段，整个过程如同瀑布流水。该模型为软件的开发和维护提供了一种有效的管理模式，但在大量的实践中暴露出其缺点,其中最突出的时缺乏灵活性。特别是无法解决软件需求不明确或不准确的问题，所以瀑布模型适用于需求明确，且很少发生较大变化的项目。</p>
 <p> 为了克服瀑布模型的缺点，演化模型允许在获取了一组基本需求之后，通过快速法分析构造出软件的初始可运行版本（原型），然后根据用户在适用原型的过程中提出的意见对原型进行改进，从而获得原型的新版本。这一过程重复进行指导得到令用户满意的软件。该模型和螺旋模型，喷泉模型等使用与对软件需求缺乏明确认识的项目。</p>
 <p>​    螺旋模型是将瀑布模型和演化模型进行结合，在保持二者有点的同时增加了风险分析，从而弥补了二者的不足，该模型沿着螺旋旋转，并通过笛卡尔坐标的四个象限分别表示四个方面的活动：制定计划，风险分析，实施工程和客户评估。螺旋模型为项目管理人员及时调整管理决策提供了方便，进而可以降低开发风险。</p>
 <p>​    喷泉模型是以面向对象的软件开发方法为基础，以用户需求为动力，以对象来驱动的模型。该模型主要用于描述面向对象的开发过程，体现了面型对象开发过程的迭代和无间隙特性。迭代指模型中的活动通常需要重复多次，相关功能在每次迭代中被加入新的系统。无间隙是指在各开发活动之间没有明显边界。</p>
-<p><img src="/2018/09/10/uml-1/TIM截图20180908181147.png" alt="TIM截图20180908181147"></p>
+<p><img src="/2018/09/10/uml-1/gitworkspace\Myzss.github.io\source\_posts\uml-1\TIM截图20180912160842.png" alt="TIM截图20180908181147"></p>
+<p><img src="/2018/09/10/uml-1/TIM截图20180912213811.png" alt="TIM截图20180912213811"></p>
+<p><img src="/2018/09/10/uml-1/TIM截图20180912220237.png" alt="TIM截图20180912220237"></p>
 
           
         
@@ -1272,7 +1607,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">14</span>
+                    <span class="site-state-item-count">15</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1326,7 +1661,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">13</span>
+                      
+                    
+                    <span class="site-state-item-count">14</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
