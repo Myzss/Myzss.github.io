@@ -131,7 +131,7 @@
 
 
   <meta name="description" content="项目管理工具： ​     Gantt 图：表现了一个系统开发过程中各个活动的时间安排，也反映了各个活动的持续时间和软件开发的进度，但是不能反映各个活动之间的依赖关系。活动之间依赖关系要用工程网络图（活动图）来表现。 软件开发模型： 耦合度： ​    模块的耦合度表现了模块之间相互关联的程度，分为b级 ​    耦合度低 ———————————————————————耦合度高 ​    无直接耦">
-<meta name="keywords" content="项目管理">
+<meta name="keywords" content="项目管理_系统可靠性分析">
 <meta property="og:type" content="article">
 <meta property="og:title" content="项目管理">
 <meta property="og:url" content="http://yoursite.com/2018/09/10/项目管理/index.html">
@@ -139,7 +139,10 @@
 <meta property="og:description" content="项目管理工具： ​     Gantt 图：表现了一个系统开发过程中各个活动的时间安排，也反映了各个活动的持续时间和软件开发的进度，但是不能反映各个活动之间的依赖关系。活动之间依赖关系要用工程网络图（活动图）来表现。 软件开发模型： 耦合度： ​    模块的耦合度表现了模块之间相互关联的程度，分为b级 ​    耦合度低 ———————————————————————耦合度高 ​    无直接耦">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/2018/09/10/项目管理/TIM截图20180907132749.png">
-<meta property="og:updated_time" content="2018-09-12T08:09:20.761Z">
+<meta property="og:image" content="http://yoursite.com/2018/09/10/项目管理/TIM截图20180914154439.png">
+<meta property="og:image" content="http://yoursite.com/2018/09/10/项目管理/TIM截图20180914155816.png">
+<meta property="og:image" content="http://yoursite.com/2018/09/10/项目管理/TIM截图20180914160020.png">
+<meta property="og:updated_time" content="2018-09-14T08:31:05.575Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="项目管理">
 <meta name="twitter:description" content="项目管理工具： ​     Gantt 图：表现了一个系统开发过程中各个活动的时间安排，也反映了各个活动的持续时间和软件开发的进度，但是不能反映各个活动之间的依赖关系。活动之间依赖关系要用工程网络图（活动图）来表现。 软件开发模型： 耦合度： ​    模块的耦合度表现了模块之间相互关联的程度，分为b级 ​    耦合度低 ———————————————————————耦合度高 ​    无直接耦">
@@ -385,7 +388,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-09-12 16:09:20" itemprop="dateModified" datetime="2018-09-12T16:09:20+08:00">2018-09-12</time>
+                <time title="修改时间：2018-09-14 16:31:05" itemprop="dateModified" datetime="2018-09-14T16:31:05+08:00">2018-09-14</time>
               
             
           </span>
@@ -515,6 +518,24 @@
 </tbody>
 </table>
 <p>CVS  Concurrent  Version  System  是一个免费的协同版本控制工具，主要用于软件源码的维护。此外CVS可以维护任意文档的开发和使用，如共享文件的编辑修改，而不仅仅局限于程序设计。cvs维护的文件类型可以是文本类型也可以是二进制类型。cvs基于客户端/服务器模式，多个用户可以网络的方式进行同时访问，从而使得cvs成为位于不同地点的人同时处理数据文件 特别是程序的源代码时的首选。</p>
+<p>软件容错率的提高，有利于软件可靠性的提高</p>
+<p>软件可靠性是指软件按照用户的要求和设计的目标，执行其功能的正确程度，所以一个可靠的软件应当是正确的完整的， 一致的和健壮的。 通常软件可靠性收到其他质量特性的影响。</p>
+<p>软件开发工作量和成本估算：一般是通过计算LOC （源代码行数）和功能点数（FP）完成的。</p>
+<p>功能点数与源代码函数是可以相互转换的。</p>
+<p>如果没有历史数据可以使用，或者新的项目与之前做过的项目差别很大，那么可以使用一个成熟的估算模型，如IBM模型 COCOMO 模型或 Putnam 方法论将软件项目规模 转换成工作量</p>
+<p>​    以IBM 为例  ，1977年提出的估算公式：</p>
+<p>​    E = 5.2xL0.91  L  是源代码函数（LOC） E是工作量（PM计）</p>
+<p>​    D = 4.1x L 0.36   D 是项目持续时间（按照月进行计算）</p>
+<p>​    S = 0.54xE0.6    S 是人员需要量（按照人计算）</p>
+<p>​    DOC  = 49xL1.01   Doc 是文档数量（按照页计算）</p>
+<p><img src="/2018/09/10/项目管理/TIM截图20180914154439.png" alt="TIM截图20180914154439"></p>
+<p>时间管理（计算）</p>
+<p>风险管理</p>
+<p>进度安排的常用图形有Gantt图和PERT图</p>
+<p>Gantt图不能够清晰描述各任务之间的依赖关系</p>
+<p>PERT图可以给出哪些任务完成后才能够开始另一些任务</p>
+<p><img src="/2018/09/10/项目管理/TIM截图20180914155816.png" alt="TIM截图20180914155816"></p>
+<p><img src="/2018/09/10/项目管理/TIM截图20180914160020.png" alt="TIM截图20180914160020"></p>
 
       
     </div>
@@ -545,7 +566,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/项目管理/" rel="tag"># 项目管理</a>
+            <a href="/tags/项目管理-系统可靠性分析/" rel="tag"># 项目管理_系统可靠性分析</a>
           
         </div>
       
@@ -658,6 +679,8 @@
                 <div class="site-state-item site-state-tags">
                   <a href="/tags/index.html">
                     
+                    
+                      
                     
                       
                     
