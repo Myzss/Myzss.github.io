@@ -145,10 +145,12 @@
 <meta property="og:image" content="http://yoursite.com/2018/09/10/操作系统/TIM截图20180908143248.png">
 <meta property="og:image" content="http://yoursite.com/2018/09/10/操作系统/TIM截图20180908150412.png">
 <meta property="og:image" content="http://yoursite.com/2018/09/10/操作系统/TIM截图20180908150515.png">
+<meta property="og:image" content="http://yoursite.com/2018/09/10/操作系统/TIM截图20180916153617.png">
+<meta property="og:image" content="http://yoursite.com/2018/09/10/操作系统/TIM截图20180916153602.png">
 <meta property="og:image" content="http://yoursite.com/2018/09/10/操作系统/TIM截图20180908154050.png">
 <meta property="og:image" content="http://yoursite.com/2018/09/10/操作系统/TIM截图20180912162028.png">
 <meta property="og:image" content="http://yoursite.com/2018/09/10/操作系统/TIM截图20180912162014.png">
-<meta property="og:updated_time" content="2018-09-12T10:08:02.066Z">
+<meta property="og:updated_time" content="2018-09-16T08:52:17.100Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="操作系统">
 <meta name="twitter:description" content="5-7 ​    操作系统： ​    管理系统的软硬件，数据资源 ​    控制程序运行 ​    人机之间的接口 ​    应用软件与硬件之间的接口 包括：     进程管理  存储管理   文件管理  作业管理   设备管理 ​        进程管理 进程的状态  前趋图   PV操作   死锁问题     存储管理 段页式存储     页面置换算法   文件管理 索引文件    位示图">
@@ -394,7 +396,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-09-12 18:08:02" itemprop="dateModified" datetime="2018-09-12T18:08:02+08:00">2018-09-12</time>
+                <time title="修改时间：2018-09-16 16:52:17" itemprop="dateModified" datetime="2018-09-16T16:52:17+08:00">2018-09-16</time>
               
             
           </span>
@@ -509,6 +511,8 @@
 <p>固定分区管理方案： 固定分区是一种静态分区方式，在系统生成时已将主存区划分为若干个分区，每个分区的大小可不等。操作系统通过主存分配情况表管理主存区。问题：已分配区中存在未用空间，原因是程序或作业的大小不可能都刚好等于分区的大小，造成了空间的浪费。通常将已经分配分区的未用空间叫做零头或内碎片。</p>
 <p>请求分页存储管理：将一个进程的地址空间划分为若干个大小相等的区域。称为页。相应的，将主存空阿金划分成与页相同大小的若干个物理块，称为块或页框。在为进程分配主存时，只装入若干页的用户进程和数据而非全部程序，就可以启动运行，而且若干页分别装入多个不相邻的物理块中。当访问的页面不在主存中，产生缺页中断，系统通过调页功能和页面置换功能，陆续将要使用的页面调入主存区，同时把暂不运行的页面置换到外存上。因此该方案当一个作业的程序地址空间大于主存空间可以使用的空间时，也可以执行</p>
 <p>​    覆盖技术指的是让作业中不同时运行的程序模块共同使用统一贮存区域。这样，不必将程序完全装入到主存区就可以运行。当运行中调用另一个模块时，再从辅存中调入这个模块而将原来已经运行完成的程序模块覆盖，即装入到同一存储区域内。对此要求用户明确地描述作业中各个程序模块间的调用关系，这将加重用户负担。</p>
+<p><img src="/2018/09/10/操作系统/TIM截图20180916153617.png" alt="TIM截图20180916153617"></p>
+<p><img src="/2018/09/10/操作系统/TIM截图20180916153602.png" alt="TIM截图20180916153602"></p>
 <p>文件管理：</p>
 <p>​    索引文件结构</p>
 <p>​    （13 个 索引节点   0-12）</p>
@@ -672,7 +676,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">15</span>
+                    <span class="site-state-item-count">16</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -687,7 +691,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">1</span>
+                      
+                    
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -730,7 +736,7 @@
                     
                       
                     
-                    <span class="site-state-item-count">14</span>
+                    <span class="site-state-item-count">15</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
